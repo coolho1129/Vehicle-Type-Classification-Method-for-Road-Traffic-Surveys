@@ -34,8 +34,7 @@ conda activate vehicle_classify
 python Init_classifier_train.py
 ```
 **Outputs** : Model weights are saved in `./res_weight/resnet50/final`      
-
-
+<br>
 
 ### Wheel Detection Training
 **Script**: `wheel_detect_trainset.py`
@@ -47,7 +46,7 @@ python Init_classifier_train.py
 python wheel_detect_trainset.py
 ```
 **Outputs**: Images and CSV files are saved in `./ml/train`.      
-
+<br>
 
 
 ### Trailer Classifier Training
@@ -61,7 +60,7 @@ python wheel_detect_trainset.py
 python trailer_classifier_train.py
 ```
 **Outputs**: Best models are saved in `./ml/model`.      
-  
+ <br> 
 
 
 ### Initial Classifier Prediction
@@ -75,7 +74,7 @@ python trailer_classifier_train.py
 python Init_classifier_predict.py
 ```
 **Outputs**: Predictions and accuracy results are saved in `./init_classification`.
-
+<br>
 
 
 ### Wheel Detection
@@ -89,7 +88,7 @@ python Init_classifier_predict.py
 python wheel_detect.py
 ```
 **Outputs**: Images and CSV files are saved in `./output/pred`.
-
+<br>
 
 
 ### Trailer Classifier Prediction
