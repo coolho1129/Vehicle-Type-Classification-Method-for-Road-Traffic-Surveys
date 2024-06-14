@@ -1,4 +1,4 @@
-# Vehicle Classification System
+# Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys
 
 This repository contains the source code for a vehicle classification system, including initial vehicle classification, wheel detection, and trailer classification using machine learning models.
 
