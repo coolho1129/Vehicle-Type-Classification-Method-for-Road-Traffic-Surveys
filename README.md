@@ -60,7 +60,7 @@ python wheel_detect_trainset.py
 python trailer_classifier_train.py
 ```
 **Outputs**: Best models are saved in `./ml/model`.      
- <br> 
+<br> 
 
 
 ### Initial Classifier Prediction
@@ -73,7 +73,7 @@ python trailer_classifier_train.py
 ```
 python Init_classifier_predict.py
 ```
-**Outputs**: Predictions and accuracy results are saved in `./init_classification`.
+**Outputs**: Predictions and accuracy results are saved in `./init_classification`.  
 <br>
 
 
@@ -87,7 +87,7 @@ python Init_classifier_predict.py
 ```
 python wheel_detect.py
 ```
-**Outputs**: Images and CSV files are saved in `./output/pred`.
+**Outputs**: Images and CSV files are saved in `./output/pred`.  
 <br>
 
 
