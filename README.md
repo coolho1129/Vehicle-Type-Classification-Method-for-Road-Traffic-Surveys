@@ -25,7 +25,7 @@ conda activate vehicle_classify
 
 ### Initial Classifier Training
 
-**Script**: `Init_classifier_train.py`
+**Script**: `init_classifier_train.py`
 
 **Purpose**: Trains the initial vehicle classifier using ResNet-50 and saves the model weights.
 
@@ -65,7 +65,7 @@ python trailer_classifier_train.py
 
 ### Initial Classifier Prediction
 
-**Script**: `Init_classifier_predict.py`
+**Script**: `init_classifier_predict.py`
 
 **Purpose**: Classifies vehicles using the trained model and evaluates the accuracy.
 
