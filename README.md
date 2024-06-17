@@ -73,7 +73,7 @@ python trailer_classifier_train.py
 ```
 python Init_classifier_predict.py
 ```
-**Outputs**: Predictions and accuracy results are saved in `./init_classification`.  
+**Outputs**: Predictions are saved in `./init_classification`.  
 <br>
 
 
@@ -101,4 +101,4 @@ python wheel_detect.py
 ```
 python trailer_classifier_predict.py
 ```
-**Outputs**: Classification results and accuracy are saved in `./result`.
+**Outputs**: Classification results are saved in `./result`.
