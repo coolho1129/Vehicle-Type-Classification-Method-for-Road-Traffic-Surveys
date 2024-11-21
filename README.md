@@ -102,3 +102,8 @@ python wheel_detect.py
 python trailer_classifier_predict.py
 ```
 **Outputs**: Classification results are saved in `./result`.
+
+### Paper
+
+**Conference**:
+**Journal**:
