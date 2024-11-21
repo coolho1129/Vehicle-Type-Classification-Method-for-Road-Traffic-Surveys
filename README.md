@@ -104,6 +104,8 @@ python trailer_classifier_predict.py
 **Outputs**: Classification results are saved in `./result`.
 
 ### Paper
+<a href="https://www.google.com">Conference</a>
+<a href="https://www.google.com">Journal</a>
 
-**Conference**:
-**Journal**:
+
+
