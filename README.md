@@ -31,7 +31,7 @@ conda activate vehicle_classify
 
 **Execution**: Navigate to vehicle_classifier and run:
 ```
-python Init_classifier_train.py
+python init_classifier_train.py
 ```
 **Outputs** : Model weights are saved in `./res_weight/resnet50/final`      
 <br>
