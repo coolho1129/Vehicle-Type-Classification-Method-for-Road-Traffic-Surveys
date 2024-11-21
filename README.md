@@ -105,6 +105,7 @@ python trailer_classifier_predict.py
 
 ### Paper
 <a href="https://github.com/coolho1129/Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys/blob/main/papers/conference">Conference</a>
+<br>
 <a href="https://github.com/coolho1129/Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys/blob/main/papers/journal">Journal</a>
 
 
