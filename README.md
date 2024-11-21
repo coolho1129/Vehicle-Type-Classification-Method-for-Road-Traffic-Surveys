@@ -104,8 +104,8 @@ python trailer_classifier_predict.py
 **Outputs**: Classification results are saved in `./result`.
 
 ### Paper
-<a href="https://www.google.com">Conference</a>
-<a href="https://www.google.com">Journal</a>
+<a href="https://github.com/coolho1129/Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys/blob/main/papers/conference">Conference</a>
+<a href="https://github.com/coolho1129/Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys/blob/main/papers/journal">Journal</a>
 
 
 
