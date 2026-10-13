@@ -1,110 +1,99 @@
-# Vehicle-Type-Classification-Method-for-Road-Traffic-Surveys
+# Vehicle Type Classification Method for Road Traffic Surveys
 
-This repository contains the source code for a vehicle classification system, including initial vehicle classification, wheel detection, and trailer classification using machine learning models.
+This repository provides the implementation of a vehicle type classification system for road traffic surveys. The system integrates initial vehicle classification, wheel detection, and trailer classification using deep learning and machine learning techniques.
+
+## Publication
+
+**Vehicle Type Classification Method for Road Traffic Surveys**
+
+Mi-Seon Kang, Chan-Ho Kim, Pyong-Kun Kim
+
+*IEMEK Journal of Embedded Systems and Applications*, Vol. 19, No. 5, pp. 227–234, 2024.
+
+[**DOI**](https://doi.org/10.14372/IEMEK.2024.19.5.227) | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003132180)
 
 ## Development Environment
 
-- **Python Version:** 3.10.13
-- **Operating System:** Ubuntu 20.04
-- **GPU:** RTX A6000
-- **CUDA Version:** 11.3
+- **OS:** Ubuntu 20.04
+- **Python:** 3.10.13
+- **GPU:** NVIDIA RTX A6000
+- **CUDA:** 11.3
 
 ## Installation
 
-Before running the scripts, set up the Python environment by creating a Conda environment using the provided `environment.yml` file:
+Create the Conda environment using the provided `environment.yml` file:
 
-```
+```bash
 conda env create -f environment.yml
-```
-Activate the environment:
-```
 conda activate vehicle_classify
 ```
 
-## Usage  
+Navigate to the source directory before running the scripts:
 
-### Initial Classifier Training
-
-**Script**: `init_classifier_train.py`
-
-**Purpose**: Trains the initial vehicle classifier using ResNet-50 and saves the model weights.
-
-**Execution**: Navigate to vehicle_classifier and run:
+```bash
+cd vehicle_classifier
 ```
+
+## Training
+
+### 1. Initial Vehicle Classifier
+
+Train a ResNet-50-based classifier for initial vehicle type classification.
+
+```bash
 python init_classifier_train.py
 ```
-**Outputs** : Model weights are saved in `./res_weight/resnet50/final`      
-<br>
 
-### Wheel Detection Training
-**Script**: `wheel_detect_trainset.py`
+**Output:** Trained model weights are saved in `./res_weight/resnet50/final`.
 
-**Purpose**: Detects wheels in images and saves the results along with wheel count and positions to CSV files.
+### 2. Wheel Detection
 
-**Execution**: Navigate to vehicle_classifier and run:
-```
+Detect vehicle wheels and extract wheel counts and positions for the training dataset.
+
+```bash
 python wheel_detect_trainset.py
 ```
-**Outputs**: Images and CSV files are saved in `./ml/train`.      
-<br>
 
+**Output:** Processed images and CSV files are saved in `./ml/train`.
 
-### Trailer Classifier Training
+### 3. Trailer Classifier
 
-**Script**: `trailer_classifier_train.py`
+Train machine learning classifiers to distinguish between full trailers and semi-trailers using extracted features.
 
-**Purpose**: Trains classifiers to distinguish between full and semi trailers using extracted features.
-
-**Execution**: Navigate to `vehicle_classifier` and run:
-```
+```bash
 python trailer_classifier_train.py
 ```
-**Outputs**: Best models are saved in `./ml/model`.      
-<br> 
 
+**Output:** Best-performing models are saved in `./ml/model`.
 
-### Initial Classifier Prediction
+## Inference
 
-**Script**: `init_classifier_predict.py`
+### 1. Initial Vehicle Classification
 
-**Purpose**: Classifies vehicles using the trained model and evaluates the accuracy.
+Perform vehicle type classification using the trained ResNet-50 model and evaluate classification accuracy.
 
-**Execution**: Navigate to `vehicle_classifier` and run:
+```bash
+python init_classifier_predict.py
 ```
-python Init_classifier_predict.py
-```
-**Outputs**: Predictions are saved in `./init_classification`.  
-<br>
 
+**Output:** Classification predictions are saved in `./init_classification`.
 
-### Wheel Detection
+### 2. Wheel Detection
 
-**Script**: `wheel_detect.py`
+Detect wheels in input vehicle images and extract wheel-related information.
 
-**Purpose**: Detects wheels in new images and saves the detected images and data.
-
-**Execution**: Navigate to `vehicle_classifier` and run:
-```
+```bash
 python wheel_detect.py
 ```
-**Outputs**: Images and CSV files are saved in `./output/pred`.  
-<br>
 
+**Output:** Detection results, including annotated images and CSV files, are saved in `./output/pred`.
 
-### Trailer Classifier Prediction
+### 3. Trailer Classification
 
-**Script**: `trailer_classifier_predict.py`
+Classify trailers as full trailers or semi-trailers using the trained machine learning models.
 
-**Purpose**: Classifies trailers using the trained models and saves the results.
-
-**Execution**: Navigate to `vehicle_classifier` and run:
-```
+```bash
 python trailer_classifier_predict.py
 ```
-**Outputs**: Classification results are saved in `./result`.
 
-### Paper
-<a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003132180">KCI</a>
-
-
-
+**Output:** Classification results are saved in `./result`.
